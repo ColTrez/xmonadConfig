@@ -1,0 +1,25 @@
+Config { font = "xft:Noto Sans Mono:pixelsize=12"
+       , additionalFonts = []
+       , borderColor = "black"
+       , border = NoBorder
+       , bgColor = "black"
+       , fgColor = "grey"
+       , alpha = 255
+       , position = Bottom
+       , textOffset = -1
+       , iconOffset = -1
+       , lowerOnStart = True
+       , pickBroadest = False
+       , persistent = False
+       , hideOnStart = False
+       , iconRoot = "."
+       , allDesktops = True
+       , overrideRedirect = True
+       , commands = [ Run Network "enp5s0" ["-L","0","-H","32"] 10
+                    , Run MultiCpu ["-t", "CPU Usage: <total>%"] 10
+                    , Run Memory ["-t","Memory Usage: <usedratio>%"] 10
+                    ]
+       , sepChar = "%"
+       , alignSep = "}{"
+       , template = "%multicpu% | %memory% | Network Usage: %enp5s0%"
+       }

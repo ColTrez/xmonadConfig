@@ -1,0 +1,5 @@
+xmonad.errors
+xmonad.hi
+xmonad.o
+build*/
+xmonad-x86_64-linux
