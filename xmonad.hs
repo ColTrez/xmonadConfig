@@ -238,7 +238,7 @@ myLogHook = return ()
 -- per-workspace layout choices.
 --
 myStartupHook = do
-        spawnOnce "feh --bg-fill $HOME/.background/IMG_2276.jpg"
+        spawnOnce "feh --bg-fill $HOME/.xmonad/backgrounds/1920x1080/abstract_bw.jpg"
 
 ------------------------------------------------------------------------
 -- Now run xmonad with all the defaults we set up.
